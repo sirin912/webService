@@ -1,0 +1,34 @@
+package restRessources;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
+
+@Path("greetings")
+public class HelloRessources {
+	
+@GET
+//@Produces("text/plain")
+@Produces(MediaType.TEXT_PLAIN)
+public String sayHello() {
+	return " Hello from JAX-RS";
+}
+@GET
+@Path("{FirstName}/{LastName}")
+@Produces(MediaType.TEXT_PLAIN)
+public String sayHelloTo(@PathParam(value="FirstName")String prenom,@PathParam(value="LastName")String nom)
+{
+	return "hello from JAX-RS" +prenom+" "+nom;
+}
+@GET
+@Produces(MediaType.TEXT_PLAIN)
+public String sayHello(@QueryParam(value="FirstName")String prenom,@QueryParam(value="LastName")String nom)
+{
+	if(prenom==null && nom==null) {
+		return "hello from jax-rs";
+	}
+	return "hello from JAX-RS" +prenom+" "+nom;
+}
+}

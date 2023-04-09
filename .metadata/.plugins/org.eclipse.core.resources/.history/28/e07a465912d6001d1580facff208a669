@@ -1,0 +1,22 @@
+package ressources;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+
+import employees.Employe;
+@Path("employes")
+public class EmployeRessources {
+static List<Employe> employes=new ArrayList<Employe>();
+public List<Employe> getAll() {
+	return employes;
+}
+@POST
+@Consumes("application/json")
+public String addEmploye(Employe emp) {
+	return "Employe ajouté";
+}

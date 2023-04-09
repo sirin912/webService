@@ -1,0 +1,11 @@
+package restRessources;
+@Path("greetings")
+public class HelloRessources {
+	
+@GET
+//@Produces("text/plain")
+@Produces(MediaType.TEXT_PLAIN)
+public String sayHello() {
+	return " Hello from JAX-RS";
+}
+}

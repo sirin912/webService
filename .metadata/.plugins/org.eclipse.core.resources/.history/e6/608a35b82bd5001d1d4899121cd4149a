@@ -1,0 +1,6 @@
+package restActivator;
+
+@ApplicationPath("api")
+public class RestActivator extends Application{
+
+}

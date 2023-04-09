@@ -1,0 +1,15 @@
+127.0.0.1 - - [08/Apr/2023:12:53:54 +0100] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:12:54:14 +0100] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:12:54:50 +0100] "GET /api/greetings HTTP/1.1" 404 768
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:12:55:40 +0100] "GET /DemoJax-RS/api/greetings HTTP/1.1" 500 3789
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:13:02:32 +0100] "GET /DemoJax-RS/api/greetings HTTP/1.1" 200 18
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:42:58 +0100] "GET /DemoJax-RS/api/employes HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:44:24 +0100] "POST /DemoJax-RS/api/employes HTTP/1.1" 200 15
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:44:29 +0100] "GET /DemoJax-RS/api/employes HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:44:31 +0100] "GET /DemoJax-RS/api/employes HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:44:33 +0100] "GET /DemoJax-RS/api/employes HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:44:34 +0100] "GET /DemoJax-RS/api/employes HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:44:50 +0100] "GET /DemoJax-RS/api/employes HTTP/1.1" 200 2
+127.0.0.1 - - [08/Apr/2023:14:46:29 +0100] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:46:54 +0100] "POST /DemoJax-RS/api/employes HTTP/1.1" 200 15
+0:0:0:0:0:0:0:1 - - [08/Apr/2023:14:47:10 +0100] "GET /DemoJax-RS/api/employes HTTP/1.1" 200 2
